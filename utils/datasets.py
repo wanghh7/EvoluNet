@@ -26,8 +26,8 @@ class GraphLoader(object):
             self.path = os.path.join(root, "DBLP3.npz")
         elif name == 'D5':
             self.path = os.path.join(root, "DBLP5.npz")
-        elif name == 'Br':
-            self.path = os.path.join(root, "Brain.npz") 
+        elif name == 'HCP':
+            self.path = os.path.join(root, "HCP.npz")
         self._load()
 
     def _toTensor(self,device=None):
